@@ -1,0 +1,112 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav__menu {
+    list-style-type: none;
+    display: flex;
+    gap: 46px;
+}
+
+.nav__menu-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav__menu-link {
+    text-decoration: none;
+    color: getColor("main-text-color");
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+
+    &.current-page {
+        color: getColor("accent-color");
+
+        &::after {
+            width: 100%;
+            background-color: getColor("accent-color");
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 4px;
+        position: absolute;
+        bottom: -34px;
+        right: 0;
+        background: getColor("accent-color");
+        transition: width 250ms, left 250ms;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.nav__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.comp-name {
+    color: getColor("alternative-text-color");
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+}
+
+.comp-name--logo-color {
+    color: getColor("accent-color");
+}
+
+.nav-contact {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor("contacts-header-color");
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+.nav-contact__icon {
+    margin-right: 10px;
+    fill: getColor("contacts-header-color");
+}
+
+.nav a:focus,
+.nav a:hover,
+.nav-contact:focus,
+.nav-contact:hover,
+.nav-contact__icon:focus,
+.nav-contact__icon:hover {
+    color: getColor("accent-color");
+}

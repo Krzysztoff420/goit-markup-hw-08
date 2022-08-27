@@ -1,0 +1,29 @@
+.clients-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.clients-list__item {
+    color: getColor("icon-color");
+    border: 1px solid getColor("icon-color");
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link {
+    color: currentColor;
+}
+
+.clients-list__icon {
+    fill: currentColor;
+}
+
+.clients-list__item:hover,
+.clients-list__item:focus {
+    border: 1px solid getColor("accent-color");
+    color: getColor("accent-color");
+    cursor: pointer;
+}

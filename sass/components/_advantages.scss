@@ -1,0 +1,30 @@
+.advantages {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+
+.advantages__item {
+    width: 270px;
+    text-align: left;
+    font-size: 14px;
+    list-style: none;
+    display: inline-block;
+}
+
+.advantages__title {
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.advantages__text {
+    color: getColor("contacts-header-color");
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

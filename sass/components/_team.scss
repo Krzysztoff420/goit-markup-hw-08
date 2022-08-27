@@ -1,0 +1,38 @@
+.team {
+    background-color: getColor("alternative-background-color");
+}
+
+.team__members {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 30px;
+}
+
+.team-member {
+    background: getColor("body-background-color");
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    margin: 0;
+}
+
+.team-member__name {
+    font-weight: 500;
+    font-size: 16px;
+    color: getColor("alternative-text-color");
+}
+
+.team-member__caption {
+    color: getColor("contacts-header-color");
+    text-align: center;
+    padding: 20px 24px;
+}
+
+.social-icons-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}

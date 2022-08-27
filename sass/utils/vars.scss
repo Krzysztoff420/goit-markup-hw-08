@@ -1,0 +1,16 @@
+$colors: (
+'accent-color': #2196f3,
+'background-color': #2f303a,
+'contacts-color': #ffffff99,
+'contacts-header-color': #757575,
+'body-background-color': #ffffff,
+'main-text-color': #212121,
+'alternative-text-color': #000000,
+'contrast-text-color': #ffffff,
+'alternative-background-color': #f5f4fa,
+'icon-color': #afb1b8,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
