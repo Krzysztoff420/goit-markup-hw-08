@@ -66,7 +66,7 @@
                                 <nav>
                                     <ul class="menu__navigation">
                                         <li class="menu__item">
-                                            <a class="menu__link" href="index.html">Agencja</a>
+                                            <a class="menu__link" href="agencja.html">Agencja</a>
                                         </li>
                                         <li class="menu__item">
                                             <a class="menu__link" href="portfolio.html">Portfolio</a>
@@ -187,9 +187,11 @@
         <div class="section container">
             <ul class="advantages">
                 <li class="advantages__item">
+                    <div class="advantages__icon-div">
                     <svg class="advantages__icon" width="270" height="120">
                         <use href="images/icons.svg#icon-Group-1"></use>
                     </svg>
+                    </div>
                     <h3 class="advantages__title">LOREM IPSUM</h3>
                     <p class="advantages__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Aliquam
@@ -197,9 +199,11 @@
                         dignissimos consectetur nisi odio dolores eius! Adipisci, molestias.</p>
                 </li>
                 <li class="advantages__item">
+                    <div class="advantages__icon-div">
                     <svg class="advantages__icon" width="270" height="120">
                         <use href="images/icons.svg#icon-Group-2"></use>
                     </svg>
+                </div>
                     <h3 class="advantages__title">LOREM IPSUM</h3>
                     <p class="advantages__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Aliquam
@@ -207,9 +211,11 @@
                         dignissimos consectetur nisi odio dolores eius! Adipisci, molestias.</p>
                 </li>
                 <li class="advantages__item">
+                    <div class="advantages__icon-div">
                     <svg class="advantages__icon" width="270" height="120">
                         <use href="images/icons.svg#icon-Group-3"></use>
                     </svg>
+                    </div>
                     <h3 class="advantages__title">LOREM IPSUM</h3>
                     <p class="advantages__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Aliquam
@@ -217,9 +223,11 @@
                         dignissimos consectetur nisi odio dolores eius! Adipisci, molestias.</p>
                 </li>
                 <li class="advantages__item">
+                    <div class="advantages__icon-div">
                     <svg class="advantages__icon" width="270" height="120">
                         <use href="images/icons.svg#icon-Group-4"></use>
                     </svg>
+                    </div>
                     <h3 class="advantages__title">LOREM IPSUM</h3>
                     <p class="advantages__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Aliquam
@@ -252,21 +260,17 @@
                 <ul class="team__members">
                     <li>
                         <figure class="team-member">
-                            <picture>
-                                <source srcset="
-                                                      images/mobile/j1.jpg    1x,
-                                                      images/mobile/j1@2x.jpg 2x
-                                                    " media="(max-width:767px)" />
-                                <source srcset="
-                                                      images/tablet/j1.jpg    1x,
-                                                      images/tablet/j1@2x.jpg 2x
-                                                    " media="(max-width:1199px)" />
-                                <source srcset="
-                                                      images/desktop/j1.jpg    1x,
-                                                      images/desktop/j1@2x.jpg 2x
-                                                    " media="(min-width:1200px)" />
-                                <img src="images/desktop/j1.jpg" width="270" height="260" alt="John Doe - Product Designer" />
-                            </picture>
+                            
+                                <img class="team-member__img" src="images/mobile/j1.jpg" alt="John Doe - Product Designer"
+                                srcset="images/mobile/j1.jpg 270w,
+                                        images/tablet/j1.jpg 354w,
+                                        images/desktop/j1.jpg 450w,
+                                        images/mobile/j1@2x.jpg 540w,
+                                        images/tablet/j1@2x.jpg 708w,
+                                        images/desktop/j1@2x.jpg 900w
+                                "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" />
+                            
                             <figcaption class="team-member__caption">
                                 <h3 class="team-member__name">John Doe</h3>
                                 <p>Product Designer</p>
@@ -305,21 +309,17 @@
                     </li>
                     <li>
                         <figure class="team-member">
-                            <picture>
-                                <source srcset="
-                                                  images/mobile/j2.jpg    1x,
-                                                  images/mobile/j2@2x.jpg 2x
-                                                " media="(max-width:767px)" />
-                                <source srcset="
-                                                  images/tablet/j2.jpg    1x,
-                                                  images/tablet/j2@2x.jpg 2x
-                                                " media="(max-width:1199px)" />
-                                <source srcset="
-                                                  images/desktop/j2.jpg    1x,
-                                                  images/desktop/j2@2x.jpg 2x
-                                                " media="(min-width:1200px)" />
-                            <img src="images/desktop/j2.jpg" width="270" height="260" alt="Jane doe - Frontend Developer" />
-                            </picture>
+                            
+                            <img class="team-member__img" src="images/mobile/j2.jpg"  alt="Jane doe - Frontend Developer"
+                            srcset="images/mobile/j2.jpg 270w,
+                                        images/tablet/j2.jpg 354w,
+                                        images/desktop/j2.jpg 450w,
+                                        images/mobile/j2@2x.jpg 540w,
+                                        images/tablet/j2@2x.jpg 708w,
+                                        images/desktop/j2@2x.jpg 900w
+                                "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" />
+                            
                             <figcaption class="team-member__caption">
                                 <h3 class="team-member__name">Jane Doe</h3>
                                 <p>FrontEnd Developer</p>
@@ -358,22 +358,17 @@
                     </li>
                     <li>
                         <figure class="team-member">
-                            <picture>
-                            <source srcset="
-                                                  images/mobile/j3.jpg    1x,
-                                                  images/mobile/j3@2x.jpg 2x
-                                                " media="(max-width:767px)" />
-                            <source srcset="
-                                                  images/tablet/j3.jpg    1x,
-                                                  images/tablet/j3@2x.jpg 2x
-                                                " media="(max-width:1199px)" />
-                            <source srcset="
-                                                  images/desktop/j3.jpg    1x,
-                                                  images/desktop/j3@2x.jpg 2x
-                                                " media="(min-width:1200px)" />
-
-                            <img src="images/desktop/j3.jpg" width="270" height="260" alt="John Doe - Marketing Specialist" />
-                            </picture>
+                            
+                            <img class="team-member__img" src="images/mobile/j3.jpg"  alt="John Doe - Marketing Specialist"
+                            srcset="images/mobile/j3.jpg 270w,
+                                        images/tablet/j3.jpg 354w,
+                                        images/desktop/j3.jpg 450w,
+                                        images/mobile/j3@2x.jpg 540w,
+                                        images/tablet/j3@2x.jpg 708w,
+                                        images/desktop/j3@2x.jpg 900w
+                                "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" />
+                            
                             <figcaption class="team-member__caption">
                                 <h3 class="team-member__name">John Doe</h3>
                                 <p>Marketing</p>
@@ -412,21 +407,17 @@
                     </li>
                     <li>
                         <figure class="team-member">
-                            <picture>
-                                <source srcset="
-                                                  images/mobile/j4.jpg    1x,
-                                                  images/mobile/j4@2x.jpg 2x
-                                                " media="(max-width:767px)" />
-                                <source srcset="
-                                                  images/tablet/j4.jpg    1x,
-                                                  images/tablet/j4@2x.jpg 2x
-                                                " media="(max-width:1199px)" />
-                                <source srcset="
-                                                  images/desktop/j4.jpg    1x,
-                                                  images/desktop/j4@2x.jpg 2x
-                                                " media="(min-width:1200px)" />
-                            <img src="images/desktop/j4.jpg" width="270" height="260" alt="John Doe - UI Designer" />
-                            </picture>
+                            
+                            <img class="team-member__img" src="images/mobile/j4.jpg"  alt="John Doe - UI Designer" 
+                             srcset="images/mobile/j4.jpg 270w,
+                                        images/tablet/j4.jpg 354w,
+                                        images/desktop/j4.jpg 450w,
+                                        images/mobile/j4@2x.jpg 540w,
+                                        images/tablet/j4@2x.jpg 708w,
+                                        images/desktop/j4@2x.jpg 900w
+                                "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"/>
+                            
                             <figcaption class="team-member__caption">
                                 <h3 class="team-member__name">John Doe</h3>
                                 <p>UI Designer</p>
@@ -472,42 +463,42 @@
             <ul class="clients-list">
                 <li class="clients-list__item">
                     <a class="client-link" href="#">
-                        <svg class="clients-list__icon" width="170" height="92">
+                        <svg class="clients-list__icon" width="106" height="60.04">
                             <use href="images/icons.svg#icon-Client-1"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-list__item">
                     <a class="client-link" href="#">
-                        <svg class="clients-list__icon" width="170" height="92">
+                        <svg class="clients-list__icon" width="106" height="60.04">
                             <use href="images/icons.svg#icon-Client-2"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-list__item">
                     <a class="client-link" href="#">
-                        <svg class="clients-list__icon" width="170" height="92">
+                        <svg class="clients-list__icon" width="106" height="60.04">
                             <use href="images/icons.svg#icon-Client-3"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-list__item">
                     <a class="client-link" href="#">
-                        <svg class="clients-list__icon" width="170" height="92">
+                        <svg class="clients-list__icon" width="106" height="60.04">
                             <use href="images/icons.svg#icon-Client-4"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-list__item">
                     <a class="client-link" href="#">
-                        <svg class="clients-list__icon" width="170" height="92">
+                        <svg class="clients-list__icon" width="106" height="60.04">
                             <use href="images/icons.svg#icon-Client-5"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-list__item">
                     <a class="client-link" href="#">
-                        <svg class="clients-list__icon" width="170" height="92">
+                        <svg class="clients-list__icon" width="106" height="60.04">
                             <use href="images/icons.svg#icon-Client-6"></use>
                         </svg>
                     </a>
