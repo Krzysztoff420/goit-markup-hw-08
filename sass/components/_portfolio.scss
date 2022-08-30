@@ -1,3 +1,25 @@
+@media screen and (max-width: 767px) {
+    .portfolio {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .portfolio {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .portfolio__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
 .portfolio {
     display: flex;
     list-style: none;
