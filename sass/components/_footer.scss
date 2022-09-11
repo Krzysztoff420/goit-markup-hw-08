@@ -2,6 +2,8 @@
     background-color: getColor("background-color");
     padding-top: 60px;
     padding-bottom: 160px;
+    align-items: center;
+    display: flex;
 
     li {
         list-style: none;
@@ -9,13 +11,22 @@
 }
 
 .footer-box {
-    display: flex;
+    display:inline-flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
     
+}
+.footer-top {
+    width: 100%;
+    display: inline-flex;
+        flex-direction: column;
+        text-align: center;
 }
 .left-footer {
     text-align: center;
         margin-bottom: 50px;
+        
 }
 .nav-logo-footer {
     text-align: center;
@@ -76,12 +87,14 @@
     flex-direction: row;
     width: 1200px;
     text-align: left;
+    align-items: baseline;
 }
 .footer-top {
-    justify-content: space-around;
+    justify-content:left;
+    
 }
 .newsletter-footer {
-    width: 570px;
+    min-width: 570px;
     height: 86px;
     margin-top: 12px;
     margin-left: 58px;
